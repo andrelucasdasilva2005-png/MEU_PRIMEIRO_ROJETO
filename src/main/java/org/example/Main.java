@@ -1,17 +1,17 @@
 public class Main {
     public static void main(String[] args) {
-        // 1. Variável float com valor fracionado (o 'f' no final indica que é um float)
-        float valorFloat = 123.75f;
+        // 1. Declara a variável short
+        short valorShort = 100;
 
-        // 2. Casting Explícito: float -> long (ocorre truncagem, perde a parte decimal)
-        long valorLong = (long) valorFloat;
+        // 2. Casting Implícito: short -> int (promovido automaticamente)
+        int valorInt = valorShort;
 
-        // 3. Casting Implícito: long -> double (promovido automaticamente para decimal)
-        double valorDouble = valorLong;
+        // 3. Casting Explícito: short -> byte (exige o uso de (byte))
+        byte valorByte = (byte) valorShort;
 
         // Exibe todos os valores no console
-        System.out.println("Valor Float: " + valorFloat);
-        System.out.println("Valor Long (Casting Explícito): " + valorLong);
-        System.out.println("Valor Double (Casting Implícito): " + valorDouble);
+        System.out.println("Valor em short: " + valorShort);
+        System.out.println("Valor em int (Casting Implícito): " + valorInt);
+        System.out.println("Valor em byte (Casting Explícito): " + valorByte);
     }
-}
+            }
