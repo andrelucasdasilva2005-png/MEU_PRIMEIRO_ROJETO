@@ -5,12 +5,12 @@ package org.example;
 public class Main {
     static void main() {
         // Declara uma variável do tipo int e atribui um valor
-        int numeroInt = 42;
+        int NumeroInt = 42;
 
 // Ocorre o casting implícito (promoção automática de int para double)
-        double numeroDouble = numeroInt;
+        double NumeroDouble = NumeroInt;
 
 // Exibe o valor da variável double no console
-        System.out.println("Valor em double: " + numeroDouble);
+        System.out.println("Valor em double: " + NumeroDouble);
     }
 }
