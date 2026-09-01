@@ -1,25 +1,18 @@
 public class Main {
     public static void main(String[] args) {
-        // 1. Declaração do capital inicial, taxa de juros e tempo
-        double capital = 1500.00;      // Capital inicial (C)
-        double taxaMensal = 2.0;       // Taxa de juros ao mês em porcentagem (%)
-        int tempoMeses = 6;            // Período em meses (t)
+        // 1. Declara a quantidade total de segundos
+        int totalSegundos = 7385;
 
-        // 2. Converte a taxa de porcentagem para valor decimal (i)
-        double i = taxaMensal / 100.0;
+        // 2. Calcula as horas, minutos e segundos restantes
+        int horas = totalSegundos / 3600;
+        int restoSegundos = totalSegundos % 3600;
 
-        // 3. Cálculo dos juros simples: J = C * i * t
-        double juros = capital * i * tempoMeses;
+        int minutos = restoSegundos / 60;
+        int segundos = restoSegundos % 60;
 
-        // 4. Cálculo do montante final: M = C + J
-        double montante = capital + juros;
-
-        // 5. Exibição dos resultados
-        System.out.println("Capital Inicial: R$ " + capital);
-        System.out.println("Taxa Mensal: " + taxaMensal + "%");
-        System.out.println("Tempo: " + tempoMeses + " meses");
+        // 3. Exibe o resultado formatado no console
+        System.out.println("Total de segundos inseridos: " + totalSegundos);
         System.out.println("-----------------------------------");
-        System.out.printf("Juros Acumulados: R$ %.2f\n", juros);
-        System.out.printf("Montante Final: R$ %.2f\n", montante);
+        System.out.println(horas + " horas, " + minutos + " minutos e " + segundos + " segundos");
     }
             }
