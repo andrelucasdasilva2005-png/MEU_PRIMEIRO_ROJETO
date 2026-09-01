@@ -1,13 +1,13 @@
 public class Main {
     public static void main(String[] args) {
-        // 1. Declara a temperatura em Celsius
-        double celsius = 25.0;
+        // 1. Declara a medida do lado do quadrado
+        double lado = 5.0;
 
-        // 2. Aplica a fórmula de conversão para Fahrenheit
-        double fahrenheit = (celsius * 9.0 / 5.0) + 32.0;
+        // 2. Calcule a área usando a fórmula (A = lado * lado)
+        double area = lado * lado;
 
-        // 3. Exibe os resultados no console
-        System.out.println("Temperatura em Celsius: " + celsius + "°C");
-        System.out.println("Temperatura em Fahrenheit: " + fahrenheit + "°F");
+        // 3. Exibe o resultado no console
+        System.out.println("Lado do quadrado: " + lado);
+        System.out.println("Área do quadrado: " + area);
     }
             }
