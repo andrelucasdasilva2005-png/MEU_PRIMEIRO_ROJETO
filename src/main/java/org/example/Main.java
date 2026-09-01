@@ -1,13 +1,22 @@
 public class Main {
     public static void main(String[] args) {
-        // 1. Declara a medida do raio do círculo
-        double raio = 5.0;
+        // 1. Declaração das variáveis A e B com valores iniciais
+        int a = 10;
+        int b = 25;
 
-        // 2. Calcule a área usando a fórmula: A = π * r²
-        double area = Math.PI * Math.pow(raio, 2);
+        // Exibe os valores ANTES da troca
+        System.out.println("--- ANTES DA TROCA ---");
+        System.out.println("A = " + a);
+        System.out.println("B = " + b);
 
-        // 3. Exibe o resultado no console
-        System.out.println("Raio do círculo: " + raio);
-        System.out.printf("Área do círculo: %.2f\n", area);
+        // 2. Lógica de troca usando uma variável auxiliar (temp)
+        int temp = a; // Salva o valor de A na variável temporária
+        a = b;        // A recebe o valor de B
+        b = temp;     // B recebe o valor original de A que estava salvo em temp
+
+        // Exibe os valores DEPOIS da troca
+        System.out.println("\n--- DEPOIS DA TROCA ---");
+        System.out.println("A = " + a);
+        System.out.println("B = " + b);
     }
             }
