@@ -1,16 +1,19 @@
 public class Main {
     public static void main(String[] args) {
-        // 1. Declaração do peso (kg) e da altura (m)
-        double peso = 70.5;
-        double altura = 1.75;
+        // 1. Declara a medida em metros
+        double metros = 2.5;
 
-        // 2. Cálculo do IMC: peso / altura²
-        double imc = peso / Math.pow(altura, 2);
+        // 2. Realiza as conversões
+        // 1 metro = 100 centímetros
+        double centimetros = metros * 100;
 
-        // 3. Exibição dos resultados no console
-        System.out.println("Peso: " + peso + " kg");
-        System.out.println("Altura: " + altura + " m");
-        System.out.println("-------------------------");
-        System.out.printf("Seu IMC é: %.2f\n", imc);
+        // 1 metro = 1000 milímetros
+        double milimetros = metros * 1000;
+
+        // 3. Exibe os resultados no console
+        System.out.println("Medida em metros: " + metros + " m");
+        System.out.println("-----------------------------------");
+        System.out.printf("Em centímetros: %.2f cm\n", centimetros);
+        System.out.printf("Em milímetros: %.2f mm\n", milimetros);
     }
             }
