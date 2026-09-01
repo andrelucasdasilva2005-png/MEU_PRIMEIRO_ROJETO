@@ -1,29 +1,18 @@
 public class Main {
     public static void main(String[] args) {
-        // 1. Declaração das três variáveis booleanas
-        boolean cond1 = true;
-        boolean cond2 = false;
-        boolean cond3 = true;
+        // 1. Declaração e atribuição das três notas
+        double nota1 = 8.5;
+        double nota2 = 7.0;
+        double nota3 = 9.2;
 
-        System.out.println("cond1: " + cond1);
-        System.out.println("cond2: " + cond2);
-        System.out.println("cond3: " + cond3);
-        System.out.println("-----------------------------------");
+        // 2. Cálculo da média aritmética simples
+        double media = (nota1 + nota2 + nota3) / 3.0;
 
-        // 2. Operador E (AND) -> && (Verdadeiro se TODAS forem verdadeiras)
-        boolean resultadoAnd = cond1 && cond3;
-        System.out.println("cond1 E cond3 (cond1 && cond3): " + resultadoAnd);
-
-        // 3. Operador OU (OR) -> || (Verdadeiro se PELO MENOS UMA for verdadeira)
-        boolean resultadoOr = cond1 || cond2;
-        System.out.println("cond1 OU cond2 (cond1 || cond2): " + resultadoOr);
-
-        // 4. Operador NÃO (NOT) -> ! (Inverte o valor booleano)
-        boolean resultadoNao = !cond2;
-        System.out.println("NÃO cond2 (!cond2): " + resultadoNao);
-
-        // 5. Exemplo combinado com as três variáveis
-        boolean combinada = (cond1 || cond2) && cond3;
-        System.out.println("(cond1 OU cond2) E cond3: " + combinada);
+        // 3. Exibição das notas e do resultado no console
+        System.out.println("Nota 1: " + nota1);
+        System.out.println("Nota 2: " + nota2);
+        System.out.println("Nota 3: " + nota3);
+        System.out.println("-------------------------");
+        System.out.printf("Média Final: %.2f\n", media);
     }
             }
