@@ -1,23 +1,22 @@
 package org.example;
 
-import java.util.Scanner;
-
 public class transacao {
     public static void main(String[] args) {
 
-        Scanner entrada = new Scanner(System.in);
+        // Inicializa o contador
+        int contador = 1;
 
-        double valorTransacao;
+        // Repete enquanto o contador for menor ou igual a 10
+        while (contador <= 10) {
 
-        System.out.print("Digite o valor da transação: ");
-        valorTransacao = entrada.nextDouble();
+            // Exibe a mensagem para o participante
+            System.out.println("Participante " + contador + " registrado!");
 
-        if (valorTransacao > 10000) {
-            System.out.println("Transação suspeita! Deve ser sinalizada para análise.");
-        } else {
-            System.out.println("Transação normal. Não precisa ser sinalizada.");
+            // Incrementa o contador
+            contador++;
         }
 
-        entrada.close();
+        // Finaliza o programa
+        System.out.println("Todos os 10 participantes foram registrados.");
     }
 }
