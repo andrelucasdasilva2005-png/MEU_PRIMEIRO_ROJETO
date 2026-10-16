@@ -7,6 +7,7 @@ public class Main {
         System.out.println("Bem-vindo ao sistema!");
     }
 
+
     public static void main(String[] args) {
 
         // Chama a função no método main
