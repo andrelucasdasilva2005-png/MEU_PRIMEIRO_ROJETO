@@ -7,6 +7,7 @@ public class Main {
         return numero1 + numero2;
     }
 
+
     public static void main(String[] args) {
 
         // Chama a função e armazena o resultado
