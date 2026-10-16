@@ -2,16 +2,17 @@ package org.example;
 
 public class Main {
 
-    // Função que imprime uma mensagem de saudação
-    public static void imprimirSaudacao() {
-        System.out.println("Bem-vindo ao sistema!");
+    // Função que soma dois números inteiros
+    public static int somar(int numero1, int numero2) {
+        return numero1 + numero2;
     }
-
 
     public static void main(String[] args) {
 
-        // Chama a função no método main
-        imprimirSaudacao();
+        // Chama a função e armazena o resultado
+        int resultado = somar(10, 20);
 
+        // Exibe o resultado na tela
+        System.out.println("A soma é: " + resultado);
     }
 }
