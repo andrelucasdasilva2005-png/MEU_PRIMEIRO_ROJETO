@@ -1,3 +1,5 @@
+package org.example;
+
 public class Main {
 
     // Função que imprime uma mensagem de saudação
